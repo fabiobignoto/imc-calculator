@@ -1,3 +1,11 @@
+.container {
+    width: 1024px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .input_div {
     display: flex;
     margin: 36px auto 12px;
@@ -22,15 +30,22 @@
 }
 
 h2{
+
     margin-top: 24px;
+    margin: auto;
 }
 
 #result {
     margin: 18px auto 32px;
     padding: 16px;
-    width:40%;
-    border-radius: 32px;
+
     max-width: 480px;
+    min-width: 320px;
+    width:40%;
+    
+    border-radius: 32px;
+
+    text-align: center;
 }
 
 #result span {
@@ -61,4 +76,11 @@ h2{
 
 .obesidadeIII {
     background-color: var(--imcObesidadeIII);
+}
+
+@media (max-width: 640px) {
+    .input_div {
+        display: flex;
+        flex-direction: column;
+    }
 }

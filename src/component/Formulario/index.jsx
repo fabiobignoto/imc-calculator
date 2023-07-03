@@ -10,9 +10,9 @@ const Formulario = () => {
     const [estilo, setEstilo] = useState(styles.baixo);
     const [categoria, setCategoria] = useState('');
 
-const calculaIMC = () => {
-    setResultado(peso / altura / altura);
-}
+    const calculaIMC = () => {
+        setResultado(peso / altura / altura);
+    }
 
     useEffect(() => {
         calculaIMC();
@@ -43,11 +43,11 @@ const calculaIMC = () => {
                     }
                     else {
                         if (resultado < 40.00) {
-                            setEstilo(styles.obesidadeII);       
+                            setEstilo(styles.obesidadeII);
                             setCategoria('Obesidade II')
                         }
                         else {
-                            if(resultado >=40.00){
+                            if (resultado >= 40.00) {
                                 setEstilo(styles.obesidadeIII);
                                 setCategoria('Obesidade III')
                             }
@@ -60,28 +60,27 @@ const calculaIMC = () => {
     }, [resultado])
 
     return (
-        <>
+        <div className={styles.container}>
             <form className={styles.form}>
                 <div className={styles.input_div}>
                     <div>
                         <label htmlFor="height">Altura (m):</label>
                         <input className={styles.input} id="height" type="number" onInput={(e) => setAltura(parseFloat(e.target.value))} />
                     </div>
-
                     <div>
                         <label htmlFor="weight">Peso (Kg):</label>
                         <input className={styles.input} id="weight" type="number" onInput={(e) => setPeso(parseFloat(e.target.value))} />
                     </div>
                 </div>
+            </form >
 
-                    <h2>I.M.C.</h2>
+                <h2>I.M.C.</h2>
                 <div id={styles.result} className={estilo}  >
                     <span>{resultado.toFixed(2)}</span>
                     <span>{categoria}</span>
                 </div>
 
-            </form>
-        </>
+        </div>
     )
 }
 
