@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    transition: all ease 0.5s;
+
+}
+
+:root {
+    --corPrincipal: #F2E0D5;
+    --corSecundaria: #0367A6;
+    --imcBaixo: #7CD9D2;
+    --imcBom: #54AE49;
+    --imcAcima: #DAE34A;
+    --imcObesidadeI: #F8B94A;
+    --imcObesidadeII: #EB7C4D;
+    --imcObesidadeIII: #EB5919;
+}

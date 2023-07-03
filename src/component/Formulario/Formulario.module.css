@@ -1,0 +1,64 @@
+.input_div {
+    display: flex;
+    margin: 36px auto 12px;
+}
+
+.input {
+    padding: 8px;
+    font-size: 16px;
+    margin: 16px;
+    border-radius: 5px;
+    border: 3px solid var(--corSecundaria);
+}
+
+.form {
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+h2{
+    margin-top: 24px;
+}
+
+#result {
+    margin: 18px auto 32px;
+    padding: 16px;
+    width:40%;
+    border-radius: 32px;
+    max-width: 480px;
+}
+
+#result span {
+    font-size: 18px;
+    margin: 8px;
+    display: block;
+}
+
+.baixo {
+    background-color: var(--imcBaixo);
+}
+
+.bom {
+    background-color: var(--imcBom);
+}
+
+.acima {
+    background-color: var(--imcAcima);
+}
+
+.obesidadeI {
+    background-color: var(--imcObesidadeI);
+}
+
+.obesidadeII {
+    background-color: var(--imcObesidadeII);
+}
+
+.obesidadeIII {
+    background-color: var(--imcObesidadeIII);
+}
