@@ -65,7 +65,7 @@ const Formulario = () => {
                 <div className={styles.input_div}>
                     <div>
                         <label htmlFor="height">Altura (m):</label>
-                        <input className={styles.input} id="height" type="number" onInput={(e) => setAltura(parseFloat(e.target.value))} />
+                        <input className={styles.input} id="height" type="number" onInput={(e) => setAltura(parseFloat(e.target.value))} step={0.01} />
                     </div>
                     <div>
                         <label htmlFor="weight">Peso (Kg):</label>
@@ -74,11 +74,11 @@ const Formulario = () => {
                 </div>
             </form >
 
-                <h2>I.M.C.</h2>
-                <div id={styles.result} className={estilo}  >
-                    <span>{resultado.toFixed(2)}</span>
-                    <span>{categoria}</span>
-                </div>
+            <h2>I.M.C.</h2>
+            <div id={styles.result} className={estilo}  >
+                <span>{resultado.toFixed(2)}</span>
+                <span>{categoria}</span>
+            </div>
 
         </div>
     )
